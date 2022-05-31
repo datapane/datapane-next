@@ -291,7 +291,7 @@ export class ReportStore {
             { class_: MediaBlock, test: maps.jsonIsMedia },
             { class_: EmbedBlock, test: maps.jsonIsEmbed },
             { class_: FoliumBlock, test: maps.jsonIsIFrameHTML },
-            { class_: PlotapiBlock, test: maps.jsonIsIFrameHTML },
+            { class_: PlotapiBlock, test: maps.jsonIsPlotapi },
             { class_: BigNumberBlock, test: maps.jsonIsBigNumber },
             { class_: FileBlock, test: () => true },
         ];
