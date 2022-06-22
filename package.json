@@ -22,7 +22,7 @@
         "@stencil/core": "^2.14.0",
         "alasql": "^1.7.3",
         "apache-arrow": "^6.0.1",
-        "axios": "^0.27.2",
+        "axios": "~0.26.1",
         "body-scroll-lock": "^4.0.0-beta.0",
         "chroma-js": "^2.4.2",
         "clipboard": "^2.0.10",
