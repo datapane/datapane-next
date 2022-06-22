@@ -18,6 +18,6 @@ export default defineConfig({
         fileURL: "",
     },
     e2e: {
-        baseUrl: "https://overwrite-me.com",
+        baseUrl: "http://localhost:8090",
     },
 });
