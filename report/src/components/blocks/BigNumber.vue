@@ -11,7 +11,11 @@ const p = defineProps<{
 }>();
 
 const bgColor: ComputedRef<string> = computed(() =>
-    p.isPositiveIntent ? "green" : "red"
+    p.isPositiveIntent ? "bg-green-100" : "bg-red-100"
+);
+
+const textColor: ComputedRef<string> = computed(() =>
+    p.isPositiveIntent ? "text-green-800" : "text-red-800"
 );
 </script>
 
@@ -42,7 +46,7 @@ const bgColor: ComputedRef<string> = computed(() =>
                     <div
                         v-if="p.change"
                         :class="[
-                            `inline-flex items-baseline px-2.5 py-0.5 rounded-full text-sm font-medium leading-5 bg-${bgColor}-100 text-${bgColor}-800 md:mt-2 lg:mt-0`,
+                            `inline-flex items-baseline px-2.5 py-0.5 rounded-full text-sm font-medium leading-5 ${bgColor} ${textColor} md:mt-2 lg:mt-0`,
                         ]"
                     >
                         <i
