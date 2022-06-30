@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Arrow from "./BigNumberArrow.vue";
+import BigNumberArrow from "./BigNumberArrow.vue";
 
 const p = defineProps<{
     heading: string;
@@ -36,14 +36,14 @@ const p = defineProps<{
                         >
                             from {{ p.prevValue }}
                         </span>
-                        <arrow
+                        <big-number-arrow
                             class="hidden lg:hidden sm:inline-flex ml-2"
                             :is-positive-intent="p.isPositiveIntent"
                             :is-upward-change="p.isUpwardChange"
                             :change="p.change"
                         />
                     </div>
-                    <arrow
+                    <big-number-arrow
                         class="inline-flex lg:inline-flex sm:hidden"
                         :is-positive-intent="p.isPositiveIntent"
                         :is-upward-change="p.isUpwardChange"
